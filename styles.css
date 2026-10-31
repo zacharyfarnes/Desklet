@@ -356,32 +356,38 @@ h3 {
     align-items: center;
 }
 
-.duo-mark {
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 900px;
+.duo-gallery {
+    min-height: 620px;
+    position: relative;
 }
 
-.duo-mark span {
-    width: 180px;
-    height: 360px;
-    border: 13px solid #2a2b30;
-    background: linear-gradient(145deg, #252830, #101116);
-    box-shadow: 0 30px 70px rgba(14, 14, 13, 0.22);
+.duo-shot {
+    width: min(68%, 320px);
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    border: 8px solid #202126;
+    border-radius: 26px;
+    background: #202126;
+    box-shadow: 0 30px 70px rgba(14, 14, 13, 0.2);
 }
 
-.duo-mark span:first-child {
-    border-radius: 30px 5px 5px 30px;
-    transform: rotateY(28deg);
-    transform-origin: right center;
+.duo-shot img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
 }
 
-.duo-mark span:last-child {
-    border-radius: 5px 30px 30px 5px;
-    transform: rotateY(-28deg);
-    transform-origin: left center;
+.duo-shot-grid {
+    top: 0;
+    left: 0;
+    transform: rotate(-4deg);
+}
+
+.duo-shot-desk {
+    right: 0;
+    bottom: 0;
+    transform: rotate(4deg);
 }
 
 .privacy-callout {
@@ -544,6 +550,12 @@ details p {
 
     .product-tour {
         max-width: 620px;
+    }
+
+    .duo-gallery {
+        width: min(100%, 560px);
+        min-height: 700px;
+        margin: 0 auto;
     }
 
     .phone-shot-editor {
