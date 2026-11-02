@@ -161,27 +161,14 @@ h3 {
 }
 
 .store-button {
-    min-width: 174px;
-    padding: 10px 22px 11px;
-    border-radius: 14px;
-    background: var(--ink);
-    color: white;
-    line-height: 1.05;
+    display: inline-flex;
+    flex-shrink: 0;
 }
 
-.store-small,
-.store-large {
+.store-button img {
     display: block;
-}
-
-.store-small {
-    font-size: 0.67rem;
-}
-
-.store-large {
-    margin-top: 2px;
-    font-size: 1.3rem;
-    font-weight: 600;
+    width: auto;
+    height: 54px;
 }
 
 .text-link {
