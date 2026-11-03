@@ -61,7 +61,7 @@ footer {
 }
 
 .brand img,
-.closing img {
+.closing > img {
     border-radius: 22%;
     box-shadow: 0 8px 20px rgba(27, 25, 20, 0.14);
 }
